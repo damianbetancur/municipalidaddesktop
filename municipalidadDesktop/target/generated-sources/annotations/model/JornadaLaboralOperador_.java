@@ -8,7 +8,7 @@ import model.Departamento;
 import model.Operador;
 import model.TipoJornadaLaboral;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-06-17T02:22:41")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-06-17T02:29:19")
 @StaticMetamodel(JornadaLaboralOperador.class)
 public class JornadaLaboralOperador_ { 
 
