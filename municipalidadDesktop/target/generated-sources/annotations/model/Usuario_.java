@@ -7,7 +7,7 @@ import model.Operador;
 import model.Persona;
 import model.TipoUsuario;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-06-17T02:00:22")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-06-17T02:22:41")
 @StaticMetamodel(Usuario.class)
 public class Usuario_ { 
 
