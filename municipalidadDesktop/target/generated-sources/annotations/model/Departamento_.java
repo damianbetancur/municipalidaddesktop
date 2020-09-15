@@ -12,7 +12,7 @@ import model.TipoTramite;
 import model.Tramite;
 import model.Turno;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-06-25T19:33:00")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2020-08-21T19:16:06")
 @StaticMetamodel(Departamento.class)
 public class Departamento_ { 
 

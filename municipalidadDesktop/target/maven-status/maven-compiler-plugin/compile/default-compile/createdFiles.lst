@@ -15,6 +15,7 @@ model\JornadaLaboralOperador.class
 view\JFramePrincipal.class
 view\PanelProcesarTurno02$2.class
 view\PanelProcesarTurno03.class
+.netbeans_automatic_build
 view\PanelUsuario$8.class
 model\Operador.class
 view\PanelProcesarTramite01$2.class
