@@ -1,270 +1,304 @@
-/* Municipalidad*/
-INSERT INTO `municipalidaddesktop`.`municipalidad` (`ID`, `direccion`, `nombre`, `telefono`) VALUES 
-('1', 'Av. Rivadavia 13.500', 'Municipalidad de Loreto', '(376)-440-0208');
+-- Insertar datos en la tabla municipalidad
+INSERT INTO municipalidad (ID, direccion, nombre, telefono)
+VALUES (1, 'Av. Rivadavia 13.500', 'Municipalidad de Loreto', '(376)-440-0208');
 
-/* Tipo usuario*/
-INSERT INTO `municipalidaddesktop`.`tipo_usuario` (`ID`, `descripcion`) VALUES 
-('1', 'Persona'),
-('2', 'Operador');
-('3', 'Administrador');
+-- Insertar datos en la tabla tipo_usuario
+INSERT INTO tipo_usuario (ID, descripcion)
+VALUES (1, 'Persona');
+INSERT INTO tipo_usuario (ID, descripcion)
+VALUES (2, 'Operador');
+INSERT INTO tipo_usuario (ID, descripcion)
+VALUES (3, 'Administrador');
 
+-- Insertar datos en la tabla departamento
+INSERT INTO departamento (ID, atencion_maxima, nombre, telefono, fk_municipalidad)
+VALUES (1, 20, 'Tramites de DNI y Pasaporte', 'interno 100', 1);
+INSERT INTO departamento (ID, atencion_maxima, nombre, telefono, fk_municipalidad)
+VALUES (2, 20, 'Inscripciones', 'interno 101', 1);
+INSERT INTO departamento (ID, atencion_maxima, nombre, telefono, fk_municipalidad)
+VALUES (3, 20, 'Entregas', 'interno 102', 1);
+INSERT INTO departamento (ID, atencion_maxima, nombre, telefono, fk_municipalidad)
+VALUES (4, 20, 'Mesa de Entrada', 'interno 103', 1);
+INSERT INTO departamento (ID, atencion_maxima, nombre, telefono, fk_municipalidad)
+VALUES (5, 20, 'Cajas', 'interno 104', 1);
 
-/* Departamento*/
-INSERT INTO `municipalidaddesktop`.`departamento` (`ID`, `atencion_maxima`, `nombre`, `telefono`, `fk_municipalidad`) VALUES 
-('1', '20', 'Tramites de DNI y Pasaporte', 'interno 100 ', '1'),
-('2', '20', 'Inscripciones', 'interno 101', '1'),
-('3', '20', 'Entregas', 'interno 102', '1'),
-('4', '20', 'Mesa de Entrada', 'interno 103', '1'),
-('5', '20', 'Cajas', 'interno 104', '1');
+-- Insertar datos en la tabla tipo_tramite
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (1, 'TDP-01', 'Renovación de DNI 5-8 años');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (2, 'TDP-02', 'Renovación de DNI 14 años');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (3, 'TDP-03', 'Solicitud de Pasaporte');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (4, 'TDP-04', 'Nuevo DNI por robo o extravío');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (5, 'TDP-05', 'Nuevo Pasaporte por robo o extravío');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (6, 'TDP-06', 'Cambio de Domicilio DNI');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (7, 'TDP-07', 'Cambio de Domicilio Pasaporte');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (8, 'TI-01', 'Inscripción de Nacimiento');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (9, 'TI-02', 'Inscripción de Matrimonio');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (10, 'TI-03', 'Inscripción de Defunciones');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (11, 'TI-04', 'Inscripción por Oficio');
+INSERT INTO tipo_tramite (ID, CODIGO, NOMBRE)
+VALUES (12, 'TI-05', 'Inscripción Extraña Jurisdicción');
 
+-- Insertar datos en la tabla tipo_operador
+INSERT INTO tipo_operador (ID, DESCRIPCION)
+VALUES (1, 'Operador de Caja');
+INSERT INTO tipo_operador (ID, DESCRIPCION)
+VALUES (2, 'Operador de Mesa de Entrada');
+INSERT INTO tipo_operador (ID, DESCRIPCION)
+VALUES (3, 'Operador de Tramites de DNI y Pasaporte');
+INSERT INTO tipo_operador (ID, DESCRIPCION)
+VALUES (4, 'Operador de Inscripciones');
+INSERT INTO tipo_operador (ID, DESCRIPCION)
+VALUES (5, 'Operador de Entregas');
 
-/* Tipo Tramite*/
-INSERT INTO `municipalidaddesktop`.`tipo_tramite` (`ID`, `CODIGO`, `NOMBRE`) VALUES 
-('1', 'TDP-01', 'Renovación de DNI 5-8 años'),
-('2', 'TDP-02', 'Renovación de DNI 14 años'),
-('3', 'TDP-03', 'Solicitud de Pasaporte'),
-('4', 'TDP-04', 'Nuevo DNI por robo o extravío'),
-('5', 'TDP-05', 'NNuevo Pasaporte por robo o extravío'),
-('6', 'TDP-06', 'Cambio de Domicilio DNI'),
-('7', 'TDP-07', 'Cambio de Domicilio Pasaporte'),
-('8', 'TI-01', 'Inscripción de Nacimiento'),
-('9', 'TI-02', 'Inscripción de Matrimonio'),
-('10', 'TI-03', 'Inscripción de Defunciones'),
-('11', 'TI-04', 'Inscripción por Oficio'),
-('12', 'TI-05', 'Inscripción Extraña Jurisdicción');
+-- Insertar datos en la tabla operador
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (1, 'Betancur', '30000000', 'Damián', 4, 2, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (2, 'Iriarte', '30000001', 'Jose', 4, 2, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (3, 'Diaz', '30000002', 'Pablo', 4, 2, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (4, 'Cespedes', '30000003', 'Alejandro', 5, 1, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (5, 'Cespedes', '30000004', 'Fatima', 5, 1, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (6, 'Ramirez', '30000005', 'Ramiro', 5, 1, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (7, 'Ramirez', '30000006', 'Rolando', 1, 3, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (8, 'Sosa', '30000007', 'Esteban', 1, 3, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (9, 'Green', '30000008', 'Raquel', 1, 3, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (10, 'Heller', '30000009', 'Ross', 1, 3, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (11, 'Boufet', '30000010', 'Feeby', 2, 4, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (12, 'Bing', '30000011', 'Chandler', 2, 4, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (13, 'Heller', '30000012', 'Monica', 2, 4, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (14, 'Anistong', '30000013', 'Jennifer', 3, 5, 1);
+INSERT INTO operador (ID, APELLIDO, DNI, NOMBRE, fk_departamento, fk_tipo_empleado, fk_municipalidad)
+VALUES (15, 'Tribiani', '30000014', 'Joey', 3, 5, 1);
 
+-- Insertar datos en la tabla usuario
+INSERT INTO usuario (ID, clave, nombre, id_tipoUsuario, id_operador)
+VALUES (1, '12345', 'damian', 2, 1);
+INSERT INTO usuario (ID, clave, nombre, id_tipoUsuario, id_operador)
+VALUES (2, '12345', 'jose', 2, 2);
+INSERT INTO usuario (ID, clave, nombre, id_tipoUsuario, id_operador)
+VALUES (3, '12345', 'pablo', 2, 3);
+INSERT INTO usuario (ID, clave, nombre, id_tipoUsuario, id_operador)
+VALUES (4, '12345', 'alejandro', 2, 4);
+INSERT INTO usuario (ID, clave, nombre, id_tipoUsuario, id_operador)
+VALUES (5, '12345', 'fatima', 2, 5);
 
+-- Insertar datos en la tabla persona
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (1, 'Diaz', '27800277', 'Daniel', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (2, 'Arias', '40335277', 'Agustina', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (3, 'Brunaga', '43758956', 'Rosana', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (4, 'Somoza', '30000000', 'Luis', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (5, 'Arias', '37473945', 'Franco', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (6, 'Batochi', '43758954', 'Daiana', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (7, 'Cabrera', '39222935', 'Ezequiel', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (8, 'Deleon', '39529908', 'Rocio', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (9, 'Deolivera', '40040872', 'Camila', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (10, 'Encina', '39226512', 'Gisel', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (11, 'Escobar', '40337367', 'Pablo', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (12, 'Fernandez', '40821767', 'Luciana', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (13, 'Figueroa', '40336332', 'Pablo', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (14, 'Garcia', '39043807', 'German', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (15, 'Ibanez', '39426643', 'Samanta', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (16, 'Lopez', '40335227', 'Solange', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (17, 'Correa', '39222934', 'Ezequiel', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (18, 'Bruzuela', '41700375', 'Roberto', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (19, 'Duran', '41089964', 'Nandor', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (20, 'Espindola', '40044203', 'Paula', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (21, 'Galeano', '37159216', 'Gabriela', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (22, 'Ferreira', '37169216', 'Javier', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (23, 'Gentilezza', '48240186', 'Jonathan', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (24, 'Godoy', '37801038', 'Valeria', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (25, 'Lopez', '39528874', 'Jesica', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (26, 'Montiel', '40791865', 'Marcelo', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (27, 'Nuñez', '31330519', 'Pancho', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (28, 'Rodriguez', '27675070', 'Angela', 1);
+INSERT INTO persona (ID, APELLIDO, DNI, NOMBRE, fk_municipalidad)
+VALUES (29, 'Torres', '27607944', 'Lucas', 1);
 
-/* Tipo Empleado*/
-INSERT INTO `municipalidaddesktop`.`tipo_operador` (`ID`, `DESCRIPCION`) VALUES 
-('1', 'Operador de Caja'),
-('2', 'Operador de Mesa de Entrada'),
-('3', 'Operador de Tramites de DNI y Pasaporte'),
-('4', 'Operador de Inscripciones'),
-('5', 'Operador de Entregas');
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (1, 1);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (1, 2);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (1, 3);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (1, 4);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (1, 5);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (1, 6);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (1, 7);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (2, 1);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (2, 2);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (2, 3);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (2, 4);
+INSERT INTO rel_Tipo_Tramite_Departamento (FK_Departamento, FK_Tipo_Tramite)
+VALUES (2, 5);
 
-/* Operador*/
-INSERT INTO `municipalidaddesktop`.`operador` (`ID`, `APELLIDO`, `DNI`, `NOMBRE`, `fk_departamento`, `fk_tipo_empleado`, `fk_municipalidad`) VALUES 
-('1', 'Betancur', '30000000', 'Damián', '4', '2', '1'),
-('2', 'Iriarte', '30000001', 'Jose', '4', '2', '1'),
-('3', 'Diaz', '30000002', 'Pablo', '4', '2', '1'),
-('4', 'Cespedes', '30000003', 'Alejandro', '5', '1', '1'),
-('5', 'Cespedes', '30000004', 'Fatima', '5', '1', '1'),
-('6', 'Ramirez', '30000005', 'Ramiro', '5', '1', '1'),
-('7', 'Ramirez', '30000006', 'Rolando', '1', '3', '1'),
-('8', 'Sosa', '30000007', 'Esteban', '1', '3', '1'),
-('9', 'Green', '30000008', 'Raquel', '1', '3', '1'),
-('10', 'Heller', '30000009', 'Ross', '1', '3', '1'),
-('11', 'Boufet', '30000010', 'Feeby', '2', '4', '1'),
-('12', 'Bing', '30000011', 'Chandler', '2', '4', '1'),
-('13', 'Heller', '30000012', 'Monica', '2', '4', '1'),
-('14', 'Anistong', '30000013', 'Jennifer', '3', '5', '1'),
-('15', 'Tribiani', '30000014', 'joey', '3', '5', '1');
+-- Insertar datos en la tabla rel_Tipo_Tramite_Empleado
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (1, 3);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (2, 3);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (3, 3);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (4, 3);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (5, 3);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (6, 3);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (7, 3);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (8, 4);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (9, 4);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (10, 4);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (11, 4);
+INSERT INTO rel_Tipo_Tramite_Empleado (FK_Empleado, FK_Tipo_Tramite)
+VALUES (12, 4);
 
+-- Insertar datos en la tabla horario_atencion_turno
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (1, '08:00', 8, 0);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (2, '08:15', 8, 15);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (3, '08:30', 8, 30);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (4, '08:45', 8, 45);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (5, '09:00', 9, 0);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (6, '09:15', 9, 15);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (7, '09:30', 9, 30);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (8, '09:45', 9, 45);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (9, '10:00', 10, 0);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (10, '10:15', 10, 15);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (11, '10:30', 10, 30);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (12, '10:45', 10, 45);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (13, '11:00', 11, 0);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (14, '11:15', 11, 15);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (15, '11:30', 11, 30);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (16, '11:45', 11, 45);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (17, '16:00', 16, 0);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (18, '16:15', 16, 15);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (19, '16:30', 16, 30);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (20, '16:45', 16, 45);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (21, '17:00', 17, 0);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (22, '17:15', 17, 15);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (23, '17:30', 17, 30);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (24, '17:45', 17, 45);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (25, '18:00', 18, 0);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (26, '18:15', 18, 15);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (27, '18:30', 18, 30);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (28, '18:45', 18, 45);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (29, '19:00', 19, 0);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (30, '19:15', 19, 15);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (31, '19:30', 19, 30);
+INSERT INTO horario_atencion_turno (ID, DESCRIPCION, HORA, MINUTO)
+VALUES (32, '19:45', 19, 45);
 
-/* Usuario*/
-INSERT INTO `municipalidaddesktop`.`usuario` (`ID`, `clave`, `nombre`, `id_tipoUsuario`, `id_operador`) VALUES 
-('1', '12345', 'damian', '2', '1'),
-('2', '12345', 'jose', '2', '2'),
-('3', '12345', 'pablo', '2', '3'),
-('4', '12345', 'alejandro', '2', '4'),
-('5', '12345', 'fatima', '2', '5'),
-('6', '12345', 'ramiro', '2', '6'),
-('7', '12345', 'rolando', '2', '7'),
-('8', '12345', 'esteban', '2', '8'),
-('9', '12345', 'raquel', '2', '9'),
-('10', '12345', 'ross', '2', '10'),
-('11', '12345', 'feeby', '2', '11'),
-('12', '12345', 'chandler', '2', '12'),
-('13', '12345', 'monica', '2', '13'),
-('14', '12345', 'jennifer', '2', '14'),
-('15', '12345', 'joey', '2', '15'),
-('16', '12345', 'admin', '3', '1');
+-- Insertar datos en la tabla estado_turno
+INSERT INTO estado_turno (ID, NOMBRE)
+VALUES (1, 'En Espera');
+INSERT INTO estado_turno (ID, NOMBRE)
+VALUES (2, 'Para Atencion');
+INSERT INTO estado_turno (ID, NOMBRE)
+VALUES (3, 'Atendiendo');
+INSERT INTO estado_turno (ID, NOMBRE)
+VALUES (4, 'Turno Atendido');
+INSERT INTO estado_turno (ID, NOMBRE)
+VALUES (5, 'Baja');
 
-
-
-/* Persona*/
-INSERT INTO `municipalidaddesktop`.`persona` (`ID`, `APELLIDO`, `DNI`, `NOMBRE`, `fk_municipalidad`) VALUES 
-('1', 'Diaz', '27800277', 'Daniel', '1'),
-('2', 'Arias', '40335277', 'Agustina','1'),
-('3', 'Brunaga', '43758956', 'Rosana', '1'),
-('4', 'Somoza', '30000000', 'Luis', '1'),
-('5', 'Arias', '37473945', 'Franco', '1'),
-('6', 'Batochi', '43758954', 'Daiana', '1'),
-('7', 'Cabrera', '39222935', 'Ezequiel', '1'),
-('8', 'Deleon', '39529908', 'Rocio', '1'),
-('9', 'Deolivera', '40040872', 'Camila', '1'),
-('10', 'Encina', '39226512', 'Gisel', '1'),
-('11', 'Escobar', '40337367', 'Pablo', '1'),
-('12', 'Fernandez', '40821767', 'Luciana', '1'),
-('13', 'Figueroa', '40336332', 'Pablo', '1'),
-('14', 'Garcia', '39043807', 'German', '1'),
-('15', 'Ibanez', '39426643', 'Samanta', '1'),
-('16', 'Lopez', '40335227', 'Solange', '1'),
-('17', 'Correa', '39222934', 'Ezequiel', '1'),
-('18', 'Bruzuela', '41700375', 'Roberto', '1'),
-('19', 'Duran', '41089964', 'Nandor', '1'),
-('20', 'Espindola', '40044203', 'Paula', '1'),
-('21', 'Galeano', '37159216', 'Gabriela', '1'),
-('22', 'Ferreira', '37169216', 'Javier', '1'),
-('23', 'Gentilezza', '48240186', 'Jonathan', '1'),
-('24', 'Godoy', '37801038', 'Valeria', '1'),
-('25', 'Lopez', '39528874', 'Jesica', '1'),
-('26', 'Montiel', '40791865', 'Marcelo', '1'),
-('27', 'Nuñez', '31330519', 'Pancho', '1'),
-('28', 'Rodriguez', '27675070', 'Angela', '1'),
-('29', 'Torres', '27607944', 'Lucas', '1');
-
-
-/* Relacion tipo tramite con departamento*/
-INSERT INTO `municipalidaddesktop`.`rel_tipo_tramite_departamento` (`FK_Departamento`, `FK_Tipo_Tramite`) VALUES 
-('1', '1'),
-('1', '2'),
-('1', '3'),
-('1', '4'),
-('1', '5'),
-('1', '6'),
-('1', '7'),
-('2', '1'),
-('2', '2'),
-('2', '3'),
-('2', '4'),
-('2', '5');
-
-/* Relacion tipo tramite con operador*/
-INSERT INTO `municipalidaddesktop`.`rel_tipo_tramite_empleado` (`FK_Empleado`, `FK_Tipo_Tramite`) VALUES 
-('1', '3'),
-('2', '3'),
-('3', '3'),
-('4', '3'),
-('5', '3'),
-('6', '3'),
-('7', '3'),
-('8', '4'),
-('9', '4'),
-('10', '4'),
-('11', '4'),
-('12', '4');
-
-
-/* Horario Atencion Turno */
-INSERT INTO `municipalidaddesktop`.`horario_atencion_turno` (`ID`, `DESCRIPCION`, `HORA`, `MINUTO`) VALUES 
-('1', '08:00', '8', '0'),
-('2', '08:15', '8', '15'),
-('3', '08:30', '8', '30'),
-('4', '08:45', '8', '45'),
-('5', '09:00', '9', '0'),
-('6', '09:15', '9', '15'),
-('7', '09:30', '9', '30'),
-('8', '09:45', '9', '45'),
-('9', '10:00', '10', '0'),
-('10', '10:15', '10', '15'),
-('11', '10:30', '10', '30'),
-('12', '10:45', '10', '45'),
-('13', '11:00', '11', '0'),
-('14', '11:15', '11', '15'),
-('15', '11:30', '11', '30'),
-('16', '11:45', '11', '45'),
-('17', '16:00', '16', '0'),
-('18', '16:15', '16', '15'),
-('19', '16:30', '16', '30'),
-('20', '16:45', '16', '45'),
-('21', '17:00', '17', '0'),
-('22', '17:15', '17', '15'),
-('23', '17:30', '17', '30'),
-('24', '17:45', '17', '45'),
-('25', '18:00', '18', '0'),
-('26', '18:15', '18', '15'),
-('27', '18:30', '18', '30'),
-('28', '18:45', '18', '45'),
-('29', '19:00', '19', '0'),
-('30', '19:15', '19', '15'),
-('31', '19:30', '19', '30'),
-('32', '19:45', '19', '45');
-
-/* Estado Turno*/
-INSERT INTO `municipalidaddesktop`.`estado_turno` (`ID`, `NOMBRE`) VALUES 
-('1', 'En Espera'),
-('2', 'Para Atencion'),
-('3', 'Atendiendo'),
-('4', 'Turno Atendido'),
-('5', 'Baja');
-
-/* Tipo Jornada Laboral*/
-INSERT INTO `municipalidaddesktop`.`tipojornadalaboral` (`ID`, `DESCRIPCION`) VALUES 
-('1', 'LOGIN'),
-('2', 'LOGOUT'),
-('3', 'LUNCH IN'),
-('4', 'LUNCH OUT');
-
-
-
-
-
-
-
-
-
-/* Reuisito Obligatorio*/
-INSERT INTO `turnos01`.`requisitoobligatorio` (`ID`, `NOMBRE`) VALUES ('1', 'Fotocopia DNI');
-INSERT INTO `turnos01`.`requisitoobligatorio` (`ID`, `NOMBRE`) VALUES ('2', 'Libreta Matrimonio');
-INSERT INTO `turnos01`.`requisitoobligatorio` (`ID`, `NOMBRE`) VALUES ('3', 'Certificado de Defunción');
-INSERT INTO `turnos01`.`requisitoobligatorio` (`ID`, `NOMBRE`) VALUES ('4', 'Partida de Nacimiento');
-INSERT INTO `turnos01`.`requisitoobligatorio` (`ID`, `NOMBRE`) VALUES ('5', 'Certificado de Libre Deuda');
-
-
-/* Reuisito Opcional*/
-INSERT INTO `turnos01`.`requisitoopcional` (`ID`, `NOMBRE`) VALUES ('1', 'Constancia Antecedentes Penales');
-INSERT INTO `turnos01`.`requisitoopcional` (`ID`, `NOMBRE`) VALUES ('2', 'Fotocopia de Vacunas');
-INSERT INTO `turnos01`.`requisitoopcional` (`ID`, `NOMBRE`) VALUES ('3', 'Certificado de Buena Salud');
-INSERT INTO `turnos01`.`requisitoopcional` (`ID`, `NOMBRE`) VALUES ('4', 'Constancia de Alumno Regular');
-INSERT INTO `turnos01`.`requisitoopcional` (`ID`, `NOMBRE`) VALUES ('5', 'Certificado de Trabajo');
-
-/* relacion Tipo Tramite con requisito obligatorio */
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('1', '1');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('1', '4');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('1', '5');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('2', '1');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('2', '2');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('2', '4');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('3', '1');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('3', '2');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('3', '4');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('4', '1');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('4', '4');
-INSERT INTO `turnos01`.`tipotramite_requisitoobligatorio` (`TipoTramite_ID`, `requisitosObligatorios_ID`) VALUES ('4', '5');
-
-
-
-
-
-
-/* Turno*/
-INSERT INTO `turnos01`.`turno` (`ID`, `FECHA`, `fk_area`, `fk_empleado`, `fk_estado_turno`, `fk_tipo_atencion`, `fk_Tipo_Tramite`, `fk_hora_turno`, `fk_persona`) VALUES ('1', '2020/01/08', '1', '1', '1', '1', '1', '1', '1');
-INSERT INTO `turnos01`.`turno` (`ID`, `FECHA`, `fk_area`, `fk_empleado`, `fk_estado_turno`, `fk_tipo_atencion`, `fk_Tipo_Tramite`, `fk_hora_turno`, `fk_persona`) VALUES ('2', '2020-01-15', '1', '1', '1', '1', '1', '1', '1');
-INSERT INTO `turnos01`.`turno` (`ID`, `FECHA`, `fk_area`, `fk_empleado`, `fk_estado_turno`, `fk_tipo_atencion`, `fk_Tipo_Tramite`, `fk_hora_turno`, `fk_persona`) VALUES ('3', '2020-01-15', '1', '1', '1', '1', '1', '2', '1');
-INSERT INTO `turnos01`.`turno` (`ID`, `FECHA`, `fk_area`, `fk_empleado`, `fk_estado_turno`, `fk_tipo_atencion`, `fk_Tipo_Tramite`, `fk_hora_turno`, `fk_persona`) VALUES ('4', '2020-01-15', '1', '1', '1', '1', '1', '3', '1');
-INSERT INTO `turnos01`.`turno` (`ID`, `FECHA`, `fk_area`, `fk_empleado`, `fk_estado_turno`, `fk_tipo_atencion`, `fk_Tipo_Tramite`, `fk_hora_turno`, `fk_persona`) VALUES ('5', '2020-01-15', '1', '1', '1', '1', '1', '4', '1');
-INSERT INTO `turnos01`.`turno` (`ID`, `FECHA`, `fk_area`, `fk_empleado`, `fk_estado_turno`, `fk_tipo_atencion`, `fk_Tipo_Tramite`, `fk_hora_turno`, `fk_persona`) VALUES ('6', '2020-01-15', '1', '1', '1', '1', '1', '5', '1');
-INSERT INTO `turnos01`.`turno` (`ID`, `FECHA`, `fk_area`, `fk_empleado`, `fk_estado_turno`, `fk_tipo_atencion`, `fk_Tipo_Tramite`, `fk_hora_turno`, `fk_persona`) VALUES ('7', '2020-01-15', '1', '1', '1', '1', '1', '6', '1');
-INSERT INTO `turnos01`.`turno` (`ID`, `FECHA`, `fk_area`, `fk_empleado`, `fk_estado_turno`, `fk_tipo_atencion`, `fk_Tipo_Tramite`, `fk_hora_turno`, `fk_persona`) VALUES ('8', '2020-01-15', '1', '1', '1', '1', '1', '7', '1');
-INSERT INTO `turnos01`.`turno` (`ID`, `FECHA`, `fk_area`, `fk_empleado`, `fk_estado_turno`, `fk_tipo_atencion`, `fk_Tipo_Tramite`, `fk_hora_turno`, `fk_persona`) VALUES ('9', '2020-01-15', '1', '1', '1', '1', '1', '8', '1');
-
-
-
-/* Tramite*/
-INSERT INTO `turnos01`.`tramite` (`ID`, `FECHA`, `HORA`, `fk_area`, `fk_Tipo_Tramite`, `fk_Turno`) VALUES ('1', '2020/01/08', '16:42:00', '1', '1', '1');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- Insertar datos en la tabla tipo_jornada_laboral
+INSERT INTO tipo_jornada_laboral (ID, DESCRIPCION)
+VALUES (1, 'LOGIN');
+INSERT INTO tipo_jornada_laboral (ID, DESCRIPCION)
+VALUES (2, 'LOGOUT');
+INSERT INTO tipo_jornada_laboral (ID, DESCRIPCION)
+VALUES (3, 'LUNCH IN');
+INSERT INTO tipo_jornada_laboral (ID, DESCRIPCION)
+VALUES (4, 'LUNCH OUT');
