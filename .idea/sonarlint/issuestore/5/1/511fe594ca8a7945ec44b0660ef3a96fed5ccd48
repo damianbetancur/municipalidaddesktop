@@ -1,0 +1,10 @@
+
+r	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(๊ๆ๚บ๛ÿÿÿÿ8•ชน1
+|
+java:S14887"ZImmediately return this expression instead of assigning it to the temporary variable "qy".(ขฒุþÿÿÿÿ8•ชน1
+9
+java:S1118"Hide this public constructor.(ศ—พ8ฃ•ชน1
+j	java:S1005"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ก๓8ซ•ชน1
+j	java:S100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ฏฃศý8ญ•ชน1
+ค
+java:S1130;"Remove the declaration of thrown exception 'com.google.protobuf.TextFormat$ParseException', as it cannot be thrown from method's body.(ฏฃศý8ฎ•ชน1

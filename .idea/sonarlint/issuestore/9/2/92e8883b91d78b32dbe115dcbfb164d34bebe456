@@ -1,0 +1,45 @@
+
+l	java:S117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï²»½ıÿÿÿÿ
+g	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¥Ñš
+g	java:S117Â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ˆ¬å
+l	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û·Ââùÿÿÿÿ
+l	java:S117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ÛÔÕúÿÿÿÿ
+C
+java:S1604@"(Make this anonymous inner class a lambda(ş±œåøÿÿÿÿ
+x	java:S116œ"]Rename this field "jbtn_iniciarSesion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†½¤¶ÿÿÿÿÿ
+r	java:S116"WRename this field "jlbl_mensaje" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¾ ¤øÿÿÿÿ
+n	java:S116"XRename this field "jlbl_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕŸÄ¤
+m	java:S116Ÿ"WRename this field "jlbl_usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­òïÃ
+r	java:S116 "WRename this field "jtf_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸñÄĞşÿÿÿÿ
+l	java:S116¡"VRename this field "jtf_usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åš×º
+ƒ
+java:S4144"gUpdate this method so that its implementation is not identical to "jtf_usuarioKeyReleased" on line 135.(ùÿô­øÿÿÿÿ
+k
+java:S1450"URemove the "inicio" field and declare it as a local variable in the relevant methods.(†²ë†
+r
+java:S1450›"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ
+}
+java:S1450œ"aRemove the "jbtn_iniciarSesion" field and declare it as a local variable in the relevant methods.(†½¤¶ÿÿÿÿÿ
+H
+java:S1948"-Make "controlador" transient or serializable.(½”ˆúÿÿÿÿ
+U
+java:S11618":Add the "@Override" annotation above this method signature(ŠÖô„øÿÿÿÿ
+U
+java:S1161J":Add the "@Override" annotation above this method signature(ŠÖô„øÿÿÿÿ
+d	java:S100ƒ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù¬ğè
+A
+java:S1172ƒ"*Remove this unused method parameter "evt".(ù¬ğè
+i	java:S100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã§•şÿÿÿÿ
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÿô­øÿÿÿÿ
+i	java:S100®"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±„¤ üÿÿÿÿ
+i	java:S100²"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï²»½ıÿÿÿÿ
+c	java:S100¶"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö‰Š
+d	java:S100º"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¥Ñš
+c	java:S100¾"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀáÏg
+d	java:S100Â"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ˆ¬å
+i	java:S100Æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Ü­¡úÿÿÿÿ
+i	java:S100Ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û·Ââùÿÿÿÿ
+i	java:S100Î"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ÃÎ¢şÿÿÿÿ
+i	java:S100Ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ÛÔÕúÿÿÿÿ
+C
+java:S1125à"'Remove the unnecessary boolean literal.(õ§ïÕøÿÿÿÿ

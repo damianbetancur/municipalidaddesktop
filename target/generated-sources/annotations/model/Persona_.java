@@ -9,7 +9,7 @@ import model.Municipalidad;
 import model.Pasaporte;
 import model.Tramite;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2023-07-31T06:10:06")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2023-07-31T08:19:29")
 @StaticMetamodel(Persona.class)
 public class Persona_ { 
 

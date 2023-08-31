@@ -1,0 +1,19 @@
+
+J
+java:S1066l"/Merge this if statement with the enclosing one.(†ÈÈ­üÿÿÿÿ
+{
+java:S1149="eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(¹ÔÕÁ
+€
+java:S1149>"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(¢‚Ôþüÿÿÿÿ
+{
+java:S1149E"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(º•ÊÁ
+€
+java:S1149F"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(¢‚Ôþüÿÿÿÿ
+€
+java:S1149}"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(¨þôúøÿÿÿÿ
+€
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ÚªªÍûÿÿÿÿ
+=
+java:S1905S"'Remove this unnecessary cast to "List".(¥ÍØù
+I
+java:S1068'"3Remove this unused "horarioTurnoDAO" private field.(Ã¥ç±

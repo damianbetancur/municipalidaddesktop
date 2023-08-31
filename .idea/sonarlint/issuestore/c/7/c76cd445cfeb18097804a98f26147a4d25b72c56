@@ -1,0 +1,98 @@
+
+c
+java:S1192«"GDefine a constant instead of duplicating this literal "Tahoma" 6 times.(êÄÌˆüÿÿÿÿ
+K
+java:S1066¬"/Merge this if statement with the enclosing one.(ó”ÆÁúÿÿÿÿ
+l	java:S117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇâËÿÿÿÿÿ
+g	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ýœê
+g	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ•ùï
+l	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÐÁ«˜þÿÿÿÿ
+l	java:S117Š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûíñ±ÿÿÿÿÿ
+l	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êò¾«þÿÿÿÿ
+l	java:S117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Ýùêþÿÿÿÿ
+g	java:S117Ž"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì×ÔÖ
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á½Ëçøÿÿÿÿ
+?
+java:S1604»"(Make this anonymous inner class a lambda(…Ó‘ï
+D
+java:S1604Â"(Make this anonymous inner class a lambda(§¨¯Ôýÿÿÿÿ
+m	java:S116™"XRename this field "jbtn_almorzar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò‡…D
+}	java:S116š"gRename this field "jbtn_finalizarJornadaLaboral" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Þ–çª
+v	java:S116›"[Rename this field "jlbl_TipoUsuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”‚ÓÎûÿÿÿÿ
+q	java:S116œ"VRename this field "jlbl_puesto" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆŸüíúÿÿÿÿ
+m	java:S116"WRename this field "jlbl_usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­òïÃ
+r
+java:S1450’"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+r
+java:S1450“"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+m
+java:S1450”"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®
+m
+java:S1450•"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ
+v
+java:S1450˜"_Remove the "jScrollPaneArbol" field and declare it as a local variable in the relevant methods.(˜¥è¨
+p
+java:S1450"ZRemove the "tipoUsuario" field and declare it as a local variable in the relevant methods.(‘‰•î
+t
+java:S1450"^Remove the "unPanelEmpleado" field and declare it as a local variable in the relevant methods.(”‹‡Ú
+s
+java:S1450"]Remove the "unPanelEmpresa" field and declare it as a local variable in the relevant methods.(Í­›²
+s
+java:S1450"]Remove the "unPanelPersona" field and declare it as a local variable in the relevant methods.(õÜùê
+}
+java:S1450 "gRemove the "unPanelProcesarTramite01" field and declare it as a local variable in the relevant methods.(­âÓÎ
+z
+java:S1450"eRemove the "unPanelProcesarTurno01" field and declare it as a local variable in the relevant methods.(óœ‹}
+s
+java:S1450"]Remove the "unPanelUsuario" field and declare it as a local variable in the relevant methods.(¯§Ÿ€
+H
+java:S1948"-Make "controlador" transient or serializable.(½”ˆúÿÿÿÿ
+F
+java:S1948""+Make "validador" transient or serializable.(…±®üùÿÿÿÿ
+>	java:S1082")Either remove or fill this block of code.(”ý¾
+P
+java:S1161}":Add the "@Override" annotation above this method signature(†ŒË³
+n
+java:S3776Ž"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(šÿÞ¹ýÿÿÿÿ
+L
+java:S2209¡"5Change this instance-reference to a static reference.(ÓÌýí
+Q
+java:S2209¯"5Change this instance-reference to a static reference.(Ôôúýøÿÿÿÿ
+Q
+java:S2209¼"5Change this instance-reference to a static reference.(ÛÄÿûÿÿÿÿ
+K
+java:S2209Ê"5Change this instance-reference to a static reference.(¢ä†%
+L
+java:S2209Ø"5Change this instance-reference to a static reference.(È”»”
+L
+java:S2209æ"5Change this instance-reference to a static reference.(¿ç±á
+d	java:S100ï"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•«Ý¥
+A
+java:S1172ï"*Remove this unused method parameter "evt".(•«Ý¥
+N	java:S106õ"9Replace this use of System.out or System.err by a logger.(å‹€
+T	java:S106ú"9Replace this use of System.out or System.err by a logger.(¸žïíþÿÿÿÿ
+d	java:S100ÿ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»©®Æ
+A
+java:S1172ÿ"*Remove this unused method parameter "evt".(»©®Æ
+T	java:S106„"9Replace this use of System.out or System.err by a logger.(Ëö”ùüÿÿÿÿ
+T	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(¸žïíþÿÿÿÿ
+h
+java:S3776 "RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(¹žÝf
+Q
+java:S2209ã"5Change this instance-reference to a static reference.(Û¦¹þÿÿÿÿ
+Q
+java:S2209ä"5Change this instance-reference to a static reference.(ã¬ÚÞùÿÿÿÿ
+L
+java:S2209å"5Change this instance-reference to a static reference.(Ôå•Ì
+Q
+java:S2209æ"5Change this instance-reference to a static reference.(ÒÏÆ›úÿÿÿÿ
+L
+java:S2209è"5Change this instance-reference to a static reference.(§…¸Æ
+Q
+java:S2209é"5Change this instance-reference to a static reference.(ˆ¼ŠÐûÿÿÿÿ
+Q
+java:S2209ê"5Change this instance-reference to a static reference.(·Çæáÿÿÿÿÿ
+I
+java:S1128".Remove this unused import 'javax.swing.JTree'.(¦“îÉùÿÿÿÿ
+Y
+java:S1128">Remove this unused import 'javax.swing.tree.DefaultTreeModel'.(Þ°¯”þÿÿÿÿ

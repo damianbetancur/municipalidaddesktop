@@ -1,3 +1,71 @@
 
+L
+nbproject/project.properties,0\e\0e101418588c1d63f873408509f6b7c7358a41ec
+U
+%src/main/java/model/Departamento.java,6\1\61d627f1b5f24c33746daa03bd3ffa97f6efbe3d
+T
+$src/main/java/model/EstadoTurno.java,1\4\149345ddb9e1578428a260dcbaf8b2410a2707a2
+]
+-src/main/java/model/HorarioAtencionTurno.java,2\0\20d0da1999ca5931dfe037f9393593fffbef5243
+]
+-src/main/java/model/ListaDePrecioTramite.java,5\6\56e23c7e1359edcada6265902d0eb68fe975c2ed
+V
+&src/main/java/model/Municipalidad.java,5\f\5fe2ebf58f365093943459cf1f81f375b178ca80
+Q
+!src/main/java/model/Operador.java,8\b\8b4cb4ec3d1e4473fcd402b1e6f75e6857fbcab9
+M
+src/main/java/model/Pais.java,8\c\8ca779e82f32c08969ae524e9d96b521b20d09ac
+R
+"src/main/java/model/Pasaporte.java,1\4\147386862a5e7b5f74d505b795776f62a021ffb7
+P
+ src/main/java/model/Persona.java,4\4\44e7638b50a8bcb3973ae81ea73ed72ca71bbade
+R
+"src/main/java/model/Provincia.java,c\7\c7ca30f7662a6256f3359863c635a882e4b64646
+R
+"src/main/java/model/Requisito.java,1\0\106dff2a48887e7ff3deea649315f2e5cc256cc5
+P
+ src/main/java/model/TipoDNI.java,9\0\90e72bebfeed612316ec65911d79dde5c4a9c282
+[
++src/main/java/model/TipoJornadaLaboral.java,7\2\72610be277c6a10471a11a0cb705efbba84ca0d7
+U
+%src/main/java/model/TipoOperador.java,d\f\dfdf8a595cd54c272882440e4cbc9186e3be38e7
+T
+$src/main/java/model/TipoTramite.java,3\d\3d6764a41348f09798ea55c7c66a34da4a7520ea
+T
+$src/main/java/model/TipoUsuario.java,7\b\7babee9d1a4cadc040f138acf215e122b11a9cb2
+P
+ src/main/java/model/Tramite.java,d\4\d4733cccb0180fe876324e0bcfd21516e07c9961
+N
+src/main/java/model/Turno.java,8\3\83fcbdbf7e9704ec514d7b73fb88977fd471f980
+P
+ src/main/java/model/Usuario.java,7\6\762a1b0133bf761835b3bc3e0d55de9af307adbe
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+g
+7src/main/java/controller/ProcesarTramiteController.java,6\6\66db3c46ee1e901da1e57815dd6e985e81b9edcf
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+L
+src/main/java/model/DNI.java,5\9\595dc1a45f5e14aa73fb3cf7522062e89d30888a
+_
+/src/main/java/model/JornadaLaboralOperador.java,d\0\d01783913eb5f24b2a7bed88fe852d7bb7661c05
+W
+'src/main/java/dao/DNIJpaController.java,2\e\2e5b1b3817f97cd14bdff597d0dabfc5d2a43a1f
+S
+#src/main/java/view/JFrameLogin.java,9\2\92e8883b91d78b32dbe115dcbfb164d34bebe456
+W
+'src/main/java/view/JFramePrincipal.java,c\7\c76cd445cfeb18097804a98f26147a4d25b72c56
+_
+/src/main/java/controller/PersonaController.java,a\3\a34a5cada7771fac563b18d0aac6adaa6f941072
+h
+8src/main/java/dao/HorarioAtencionTurnoJpaController.java,3\d\3d6da107b2f51f5caea2f9bc1bd9a48014cdcece
+O
+src/main/java/dao/Conexion.java,5\1\511fe594ca8a7945ec44b0660ef3a96fed5ccd48
+R
+"src/main/java/controller/Main.java,6\5\650fa1777788e3539b02217f72bbbc04443393f5
+e
+5src/main/java/controller/ProcesarTurnoController.java,6\5\65760f113bd5e31ecbd30972f71d6278314e8112
+l
+<src/main/java/view/resources/TablaEmpleadoModelListener.java,5\d\5db48b3f9e94ba8d21c97d37089f9f3a37d6883f
+V
+&src/main/java/view/InterfacePanel.java,2\c\2c2316fbdc090ffc12a8bd4b877a030c7aae9731

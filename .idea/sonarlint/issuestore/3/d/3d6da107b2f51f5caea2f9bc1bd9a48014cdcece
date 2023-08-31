@@ -1,0 +1,10 @@
+
+Z	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(È¾å=
+E
+java:S3740g"/Provide the parametrized type for this generic.(ÂÎˆÃ
+F
+java:S3740€"/Provide the parametrized type for this generic.(ÂÎˆÃ
+@
+java:S1948"%Make "emf" transient or serializable.(½ÖïÌþÿÿÿÿ
+š
+java:S11300"„Remove the declaration of thrown exception 'dao.exceptions.NonexistentEntityException' which is a subclass of 'java.lang.Exception'.(È¾å=
